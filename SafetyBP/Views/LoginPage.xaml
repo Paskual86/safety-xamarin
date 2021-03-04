@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:ie="clr-namespace:IconEntry.FormsPlugin.Abstractions;assembly=IconEntry.FormsPlugin.Abstractions"
+             mc:Ignorable="d"
+             x:Class="SafetyBP.Views.LoginPage"
+             Title="{Binding Title}">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 20, 0, 0" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="{StaticResource Login}" VerticalOptions="FillAndExpand" Padding="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image Source="{DynamicResource LOGINLOGO}" WidthRequest="250"/>
+            <ie:IconEntry x:Name="entryUsername" Text="{Binding Username}" Placeholder="Usuario" TextColor="{StaticResource Blanco}" PlaceholderColor="{StaticResource Blanco}" Icon="{StaticResource USERNAME}" Grid.Row="2"/>
+            <ie:IconEntry x:Name="entryPassword" Text="{Binding Password}" Placeholder="Contraseña" IsPassword="True" TextColor="{StaticResource Blanco}" PlaceholderColor="{StaticResource Blanco}" Icon="{StaticResource PASSWORD}" Grid.Row="4"/>
+            <Button x:Name="btnValidarCredenciales" Text="Ingresar" Clicked="btnValidarCredenciales_Clicked" IsEnabled="{Binding IsEnabled}" BackgroundColor="{StaticResource BotonLogin}" TextColor="{StaticResource Blanco}" Grid.Row="6"/>
+        </Grid>        
+    </ContentPage.Content>
+</ContentPage>
