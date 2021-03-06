@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafetyBP.EntityMapper", "Sa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{69F3DBA9-E802-4C47-A9AF-73FB5B12AF13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafetyConsoleApp", "SafetyConsoleApp\SafetyConsoleApp.csproj", "{AEC2B690-AC24-4980-9243-A8C27D3DBE87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafetyConsoleApp", "SafetyConsoleApp\SafetyConsoleApp.csproj", "{AEC2B690-AC24-4980-9243-A8C27D3DBE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafetyBP.iOS", "SafetyBP.iOS\SafetyBP.iOS.csproj", "{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +127,16 @@ Global
 		{AEC2B690-AC24-4980-9243-A8C27D3DBE87}.Release|iPhone.Build.0 = Release|Any CPU
 		{AEC2B690-AC24-4980-9243-A8C27D3DBE87}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{AEC2B690-AC24-4980-9243-A8C27D3DBE87}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Release|iPhone.Build.0 = Release|iPhone
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C8806E46-0FBD-4A55-84CC-0FFAADB9A2C8}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
